@@ -101,7 +101,8 @@ const sanitizeSchema = {
 
 export default defineConfig({
   // Required for RSS generation. Prefer SITE_URL; fallback keeps build passing.
-  site: site.url,
+  site: 'https://gudaoyuqiao.github.io',
+  // base:''
   integrations: hasSiteUrl ? [sitemap()] : [],
   trailingSlash: 'always',
   build: {
